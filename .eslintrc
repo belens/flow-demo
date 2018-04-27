@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "eslint:recommended",
+		"plugin:react/recommended",
+		"prettier/flowtype",
+    "react-app"
+  ],
+  "plugins": [
+    "detox"
+  ],
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "no-multi-spaces": "error",
+		"jsx-a11y/href-no-hash": "off",
+		"max-len": ["error", {"code": 120}]
+  },
+  "env": {
+    "jasmine": true
+  },
+  "globals": {
+    "browser": true
+  }
+}
